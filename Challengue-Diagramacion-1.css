@@ -1,0 +1,149 @@
+
+h1,
+h4{
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500; 
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: roboto;
+    
+}
+
+li > img {
+    margin-right: 8px;
+}
+
+body {
+    background: rgb(231, 233, 207);
+    font-family: roboto; 
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 162px;
+    margin-left: 75px;
+    margin-right: 75px;
+
+}
+
+.body-left,
+.body-right {
+    flex: 1;
+}
+
+/* Body left  */
+.body-left > .star {
+    background: rgb(255, 196, 0);
+    color: white;
+    border: solid 1px rgb(255, 196, 0);  
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.body-left > h1 {
+    margin-bottom: 12px;
+}
+
+.body-left > p {
+    font-size:20px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 32px;
+    line-height: 150%;    
+}
+
+/* Body right */
+.body-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+
+.body-right > section {
+    background: white;
+    border: solid 1px white;
+    color: black;
+    font-weight: 100;
+    border-radius: 20px;
+    max-width: 360px;
+    padding: 39px 27px 39px 27px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+
+.body-right > section:nth-child(even) {
+    align-self: flex-start;
+}
+
+.body-right > section > div {
+    display: flex;
+    align-items: center;
+}
+
+.body-right > section .logo {
+    width: 90px;
+    margin-right: 20px;
+}
+
+.body-right h4 {
+    margin-top: 18px;
+}
+.body-right p{
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+
+@media only screen and (max-width: 640px) {
+    main {
+        flex-direction: column;
+        margin-top: 95px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .body-right {
+        margin-top: 75px;
+        padding-left: 0;
+    }
+}
